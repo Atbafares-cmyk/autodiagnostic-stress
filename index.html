@@ -6,28 +6,30 @@
 <meta name="robots" content="noindex">
 <meta name="color-scheme" content="dark light">
 <title>Mon niveau de stress perçu - Échelle PSS-10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box}
 :root{
-  --bg:#15161C; --surface:#1E2029; --surface2:#262935; --text:#E8EAF0; --muted:#A2A7B8;
-  --border:#343848; --accent:#6FB4E8; --on-accent:#15161C; --shadow:0 1px 3px rgba(0,0,0,.5);
+  --bg:#101010; --surface:#1E2029; --surface2:#262935; --text:#E8EAF0; --muted:#A2A7B8;
+  --border:#343848; --accent:#E25667; --on-accent:#FFFFFF; --shadow:0 1px 3px rgba(0,0,0,.5);
   --soft:rgba(255,255,255,.10); --soft:color-mix(in srgb, var(--accent) 20%, transparent);
 }
 :root[data-theme="light"]{
-  --bg:#FFFFFF; --surface:#F4F6F9; --surface2:#ECEEF1; --text:#33334D; --muted:#55556E;
-  --border:#D4DCE4; --accent:#0564AE; --on-accent:#FFFFFF; --shadow:0 1px 3px rgba(51,51,77,.12);
-  --soft:rgba(5,100,174,.10); --soft:color-mix(in srgb, var(--accent) 14%, transparent);
+  --bg:#FFFFFF; --surface:#F4F6F9; --surface2:#ECEEF1; --text:#101010; --muted:#55556E;
+  --border:#D4DCE4; --accent:#E25667; --on-accent:#FFFFFF; --shadow:0 1px 3px rgba(16,16,16,.12);
+  --soft:rgba(226,86,103,.10); --soft:color-mix(in srgb, var(--accent) 14%, transparent);
 }
 @media (prefers-color-scheme: light){
   :root:not([data-theme="dark"]){
-    --bg:#FFFFFF; --surface:#F4F6F9; --surface2:#ECEEF1; --text:#33334D; --muted:#55556E;
-    --border:#D4DCE4; --accent:#0564AE; --on-accent:#FFFFFF; --shadow:0 1px 3px rgba(51,51,77,.12);
-    --soft:rgba(5,100,174,.10); --soft:color-mix(in srgb, var(--accent) 14%, transparent);
+    --bg:#FFFFFF; --surface:#F4F6F9; --surface2:#ECEEF1; --text:#101010; --muted:#55556E;
+    --border:#D4DCE4; --accent:#E25667; --on-accent:#FFFFFF; --shadow:0 1px 3px rgba(16,16,16,.12);
+    --soft:rgba(226,86,103,.10); --soft:color-mix(in srgb, var(--accent) 14%, transparent);
   }
 }
 html{-webkit-text-size-adjust:100%}
+button{font-family:inherit}
 body{margin:0;background:var(--bg);color:var(--text);
-  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size:17px;line-height:1.5;overflow-x:hidden}
 .wrap{max-width:720px;margin:0 auto;padding:0 16px 120px}
 header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--border)}
